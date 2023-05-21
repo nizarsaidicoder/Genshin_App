@@ -1,0 +1,70 @@
+/* FONT SETUP */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Genshin";
+  src: url(./zh-cn.ttf);
+}
+
+:root {
+  /* COLORS */
+  --main-color: #050A27;
+  --secondary-color: #1C1F46;
+  --accent-color: #303B7A;
+  --light-color : #726f96;
+  --five-star: linear-gradient(180deg, #99601d 0%, #d8b640 100%);
+  --four-star: linear-gradient(180deg, #3b3d6a 0%, #7c52bf 100%);
+  --text-color: #ede9e9;
+  /* FONTS */
+  --main-font: "Lato", sans-serif;
+  --secondary-font: 'Genshin';
+  /* SPACING SYSTEM */
+  --xs-space: 24px;
+  --s-space: 36px;
+  --m-space: 64px;
+  --l-space: 96px;
+  --xl-space: 128px;
+  /* BOX SHADOW */
+  --box-shadow : box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+
+}
+.five-star {
+  background: var(--five-star);
+}
+.four-star {
+  background: var(--four-star);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  /* background-image: url('@/assets/cropped-3840-2160-1123013.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 100%;
+height: auto; */
+}
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ 
+@media (max-width: 920px){
+  html{
+    font-size: 54%;
+  }
+}
